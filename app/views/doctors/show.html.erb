@@ -1,0 +1,51 @@
+<h1>Doctor Details</h1>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <%= image_tag @doctor.poster.url(:medium), class:'img-thumbnail' %>
+        </div>
+        <br>
+        <div class="table-responsive">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><strong>First Name:</strong></td>
+                <td><%= @doctor.firstname %></td>
+              </tr>
+              <tr>
+                <td><strong>Last Name:</strong></td>
+                <td><%= @doctor.lastname %></td>
+              </tr>
+              <tr>
+                <td><strong>Phone:</strong></td>
+                <td><%= @doctor.phone %></td>
+              </tr>
+              <tr>
+                <td><strong>Address:</strong></td>
+                <td><%= @doctor.address %></td>
+              </tr>
+              <tr>
+                <td><strong>Consultation Fee:</strong></td>
+                <td><%= @doctor.consultation %></td>
+              </tr>
+              <tr>
+                <td><strong>User:</strong></td>
+                <td><%= @doctor.user_id %></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="form-group row">
+  <div class="col-sm-10">
+    <%= link_to 'Back', doctors_path, class: 'btn btn-success' %>
+    <%= link_to 'Edit', edit_doctor_path(@doctor), class: 'btn btn-primary' %>
+  </div>
+</div>

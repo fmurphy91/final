@@ -1,0 +1,24 @@
+A new Patient added:CAT (computerized axial tomography): 145. Xray: 80. Basic Appointment charge; 30.0
+A new Patient added:Fullname:CAT (computerized axial tomography): 145. Xray: 80. Basic Appointment charge; 40.0
+A new Patient added:Fintan MurphyWith the following requests:Bloods: 30. Xray: 80. Basic Appointment charge; 50.0
+A new Patient added:Karl Kavanagh With the following requests:Bloods: 30. CAT (computerized axial tomography): 145. MRI: 100. Xray: 80. Basic Appointment charge; 50.0
+A new Patient added:Fintan Murphy With the following requests:Bloods: 30. Basic Appointment charge; 50.0
+A new Patient added:Fintan Murphy With the following requests:Bloods: 30. Basic Appointment charge; 20.0
+A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 20.0
+A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 0.0
+A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 50.0
+A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 0.0
+A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 20.0
+A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 20.0
+A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 60.0
+A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 50.0
+A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 50.0
+A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 20.0
+A new Patient added:Adam With the following requests:MRI: 100. Xray: 80. Basic Appointment charge; 80.0
+A new Patient added:Bert With the following requests:Basic Appointment charge; 20.0
+A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 50.0
+A new Patient added:Adam A With the following requests:Basic Appointment charge; 50.0
+A new Patient added:Adam b With the following requests:Basic Appointment charge; 50.0
+A new Patient added:Fintan Murphy With the following requests:CAT (computerized axial tomography): 145. Basic Appointment charge; 70.0
+A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 30.0
+A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 30.0

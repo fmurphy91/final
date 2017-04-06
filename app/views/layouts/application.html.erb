@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smarthhealthapp</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+<body>
+
+  	<%= render 'layouts/header' %>
+    <div id= 'wrapper' class="container">
+  	  <% flash.each do |name, msg| %>
+  		<%= content_tag(:div, msg, class: "alert alert-info") %>
+  	  <% end %>
+
+  	  <%= yield %>
+
+          <div id='first-column'>
+            <div class="loginbox">
+              <% if user_signed_in? %>
+              <h5>Signed in as... <%= current_user.email %>
+                (<%= link_to 'Sign out', destroy_user_session_path,
+                :method => :delete%>)
+              </h5>
+              <% else %>
+              <h2> <%= link_to 'Register',
+              new_user_registration_path %>
+            </h2>
+            <h2> <%= link_to 'Sign in',
+            new_user_session_path %>
+          </h2>
+          <% end %>
+        </div>
+      </div>
+
+  	</div>
+</body>
+</html>

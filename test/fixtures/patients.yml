@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fullname: MyString
+  birthdate: MyString
+  telephone: MyString
+  address: MyText
+  infection: MyText
+  injury: MyText
+  observations: MyText
+  cost: 9.99
+  requests: MyText
+
+two:
+  fullname: MyString
+  birthdate: MyString
+  telephone: MyString
+  address: MyText
+  infection: MyText
+  injury: MyText
+  observations: MyText
+  cost: 9.99
+  requests: MyText
