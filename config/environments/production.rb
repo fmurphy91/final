@@ -75,7 +75,7 @@ Rails.application.configure do
   config.paperclip_defaults = {
     storage: :s3,
     s3_credentials: {
-      bucket: ENV.fetch('healthapplication'),
+      bucket: ENV.fetch('arn:aws:s3:::healthapplication'),
       access_key_id: ENV.fetch('AKIAIFHA6L4M66DC6AHA'),
       secret_access_key: ENV.fetch('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'),
       s3_region: ENV.fetch('eu-west-1'),
