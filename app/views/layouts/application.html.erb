@@ -22,7 +22,7 @@
               <% if user_signed_in? %>
               <h5>Signed in as... <%= current_user.email %>
                 (<%= link_to 'Sign out', destroy_user_session_path,
-                :method => :delete%>)
+                method: :delete%>)
               </h5>
               <% else %>
               <h2> <%= link_to 'Register',
