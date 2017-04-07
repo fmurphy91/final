@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 # Use Devise
 gem 'devise'
+gem 'aws-sdk'
 # Use paperclip
 gem "paperclip", "~> 5.0.0.beta1"
 # Use bootstrap
