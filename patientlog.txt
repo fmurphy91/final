@@ -22,3 +22,18 @@ A new Patient added:Adam b With the following requests:Basic Appointment charge;
 A new Patient added:Fintan Murphy With the following requests:CAT (computerized axial tomography): 145. Basic Appointment charge; 70.0
 A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 30.0
 A new Patient added:Fintan Murphy With the following requests:Basic Appointment charge; 30.0
+A new Patient added:Fintan Murphy With the following requests:MRI: 100. Basic Appointment charge; 20.0
+A new Patient added:Fintan Murphy With the following requests:Xray: 80. Basic Appointment charge; 30.0
+A new Patient added:testerrrrrrr With the following requests:Basic Appointment charge; 8.0
+A new Patient added:FML With the following requests:Xray: 80. Basic Appointment charge; 30.0
+A new Patient added:ITs working With the following requests:Basic Appointment charge; 69.0
+A new Patient added:Fintan Murphy With the following requests:CAT (computerized axial tomography): 145. MRI: 100. Basic Appointment charge; 70.0
+A new Patient added:Joe Rogan With the following requests:Xray: 80. Basic Appointment charge; 50.0
+A new Patient added:Test With the following requests:Xray: 80. Basic Appointment charge; 70.0
+A new Patient added:Test Rooney With the following requests:MRI: 100. Basic Appointment charge; 50.0
+A new Patient added:Man utd With the following requests:Xray: 80. Basic Appointment charge; 700.0
+A new Patient added:test Murphy With the following requests:Xray: 80. Basic Appointment charge; 50.0
+A new Patient added:Harry Potter With the following requests:CAT (computerized axial tomography): 145. Xray: 80. Basic Appointment charge; 50.0
+A new Patient added:Fintan Murphy With the following requests:Xray: 80. Basic Appointment charge; 50.0
+A new Patient added:Fintan Murphy With the following requests:Xray: 80. Basic Appointment charge; 50.0
+A new Patient added:Harry Potter With the following requests:Xray: 80. Basic Appointment charge; 50.0

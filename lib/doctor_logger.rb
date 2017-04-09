@@ -1,3 +1,4 @@
+# Singleton Pattern used in app to create a logging solution for doctors
 require 'singleton'
 class DoctorLogger < include
   Singleton

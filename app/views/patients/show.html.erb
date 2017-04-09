@@ -44,17 +44,40 @@
               </tr>
             </tbody>
           </table>
-
         </div>
       </div>
-
     </div>
   </div>
+  <div class="col-md-8">
+  <h1>Patient Appointments</h1>
+  <table class=" table table-striped" data-sort-name="name" data-sort-order="desc">
+    <thead>
+      <tr>
+        <th data-field="name" data-sortable="true">Date</th>
+        <th data-field="name" data-sortable="true">Time</th>
+        <th data-field="name" data-sortable="true">Appointment Made by</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% if @appointments.blank? %>
+      <h3>No Appointment booked yet, you can add appointments below</h3>
+      <% else %>
+      <% @appointments.each do |appointment| %>
+        <tr>
+          <td><%= appointment.date %></td>
+          <td><%= appointment.time %></td>
+          <td><%= appointment.user.email %></td>
+        </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
 </div>
-
-<div class="form-group row">
-  <div class="col-sm-10">
-    <%= link_to 'Edit', edit_patient_path(@patient), class: 'btn btn-primary' %>
-    <%= link_to 'Back', patients_path, class: 'btn btn-secondary' %>
+  <br>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <%= link_to 'Edit Patient', edit_patient_path(@patient), class: 'btn btn-primary' %>
+      <%= link_to 'Back', patients_path, class: 'btn btn-secondary' %>
+      <%= link_to "add appointment", new_patient_appointment_path(@patient), class: "btn btn-danger" %>
+    </div>
   </div>
-</div>

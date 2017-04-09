@@ -1,7 +1,11 @@
+# Include the patient_decorator for the extra requests MRI, Xray etc..
 require 'patient_decorator'
+# Include the patient_logger to enable to record some data in a .txt file about patients
 require 'patient_logger'
 class PatientsController < ApplicationController
+  # Authenticate user enables only registered users to access
   before_action :authenticate_user!
+  # allows only admin users access the :ensure_admin to allow them to destroy/delete patients
   before_filter :ensure_admin, :only => [:destroy]
   before_action :set_patient, only: [:show, :edit, :update, :destroy]
   http_basic_authenticate_with name: "dhh", password: "secret"
@@ -24,11 +28,16 @@ class PatientsController < ApplicationController
   # GET /patients/1
   # GET /patients/1.json
   def show
+    #add appointments to the patients controller where patient_id is patient id ordered descending 
+    @appointments = Appointment.where(patient_id: @patient.id).order("created_at DESC")
   end
 
   # GET /patients/new
   def new
-    @patient = Patient.new
+    # Create patient from the current_user logged in i.e the current doctor logged in
+    @patient = current_user.patients.build
+   # @patient = Patient.find(params:patient_id)
+    @appointment = Appointment.new
   end
 
   # GET /patients/1/edit
@@ -44,7 +53,8 @@ class PatientsController < ApplicationController
   # POST /patients
   # POST /patients.json
   def create
-    @patient = Patient.new()
+    # Create patient based on current_user
+    @patient = current_user.patients.build()
     @patient.fullname = params[:patient][:fullname]
     @patient.birthdate = params[:patient][:birthdate]
     @patient.telephone = params[:patient][:telephone]

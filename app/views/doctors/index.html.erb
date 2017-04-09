@@ -27,7 +27,7 @@
         <td><%= doctor.user_id %></td>
         <td><%= link_to 'View', doctor, class: 'btn btn-success align' %></td>
         <td><%= link_to 'Edit', edit_doctor_path(doctor), class: 'btn btn-primary align' %></td>
-      <% if current_user.admin? %>  <td><%= link_to 'Delete', doctor, class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td> <% end %>
+      <% if current_user.admin? %> <td><%= link_to 'Delete', doctor, class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td> <% end %>
       </tr>
     <% end %>
   </tbody>

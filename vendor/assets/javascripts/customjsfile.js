@@ -1,10 +1,8 @@
+//Function using javascript to size the uploaded image and display upload to user
 $(function() {
   $('#pictureInput').on('change', function(event) {
     var files = event.target.files;
     var image = files[0]
-
-    // here's the file size
-    //console.log(image.size);
     var reader = new FileReader();
     reader.onload = function(file) {
       var img = new Image();

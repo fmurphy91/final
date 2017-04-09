@@ -36,9 +36,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 # Use Devise
 gem 'devise'
-
 # Use paperclip
 gem "paperclip", "~> 5.0.0.beta1"
+# Use amazon web services (cloud platform to store images)
 gem 'aws-sdk', '~> 2.3'
 # Use bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha3'
@@ -58,14 +58,15 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+# Use 'sqlite3' for development
 group :development, :test do
-        gem 'sqlite3'
+  gem 'sqlite3'
 end
 
-
+#Use PostgreSQL and rails_12factor for production i.e heroku
 group :production do
-gem 'pg'
-gem 'rails_12factor'
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

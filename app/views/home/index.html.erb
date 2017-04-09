@@ -1,1 +1,29 @@
-<h1>Welcome to the Smart Health Care-Patient Management System</h1>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Welcome to the SHC-PMS</h1>
+      <p>This is the Smart Health Care-Patient Management System. We provide Doctors with a personal profile where they can add and manage patient records. Doctors can add appointments for any particular patient as well as adding requests to various hospitals and clinics for further consultations.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Patients</h2>
+        <p>Here Doctors and Medical staff can add new patient records, recording all of their necessary personal information along with any injuries, infections or special observations that the GP/Consultant might find. Additionally to that they can request further consulation requests such as Xray, MRI, CAT and Blood tests.
+          <p>To find a particular paitent the search bar located on the naigation will find any patient with first or second name.</p>
+          Doctors and staff can find a patient and add appointments specifying the date and time of appointment.
+          The appointments are linked with each individual patient record. It also specifies the users who added the Appointments to a particular patient.</p>
+        <p><%= link_to 'Add Patient Record', new_patient_path,  class: 'btn btn-primary' %></P>
+      </div>
+      <div class="col-md-4">
+        <h2>Doctors</h2>
+        <p>When a user registers the Doctor (user) will be brought to add their doctors profile here they can upload a professional picture of themselves and add their details as well as their consulatation fee.
+        <p>To search for a Doctor there is a search box search by lastname.</p>
+        <p><%= link_to 'Add Doctor Record', new_doctor_path,  class: 'btn btn-primary' %></P>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <p>&copy; 2017  SHC-PMS, Inc.</p>
+    </footer>
+  </div>

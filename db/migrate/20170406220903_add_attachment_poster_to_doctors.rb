@@ -1,3 +1,4 @@
+# Migration Adds an attached poster (image) to Doctors
 class AddAttachmentPosterToDoctors < ActiveRecord::Migration
   def self.up
     change_table :doctors do |t|
