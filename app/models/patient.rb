@@ -3,5 +3,5 @@ class Patient < ApplicationRecord
     Patient.where("fullname like ?", "%" + search_for + "%")
   end
   has_many :appointments
-  belongs_to :user
+  has_many :users
 end

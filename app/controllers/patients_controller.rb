@@ -35,7 +35,7 @@ class PatientsController < ApplicationController
   # GET /patients/new
   def new
     # Create patient from the current_user logged in i.e the current doctor logged in
-    @patient = current_user.patients.new
+    @patient = current_user.patients.build
     #@patient = Patient.find(params:patient_id)
     @appointment = Appointment.new
   end
