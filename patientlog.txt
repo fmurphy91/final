@@ -37,3 +37,4 @@ A new Patient added:Harry Potter With the following requests:CAT (computerized a
 A new Patient added:Fintan Murphy With the following requests:Xray: 80. Basic Appointment charge; 50.0
 A new Patient added:Fintan Murphy With the following requests:Xray: 80. Basic Appointment charge; 50.0
 A new Patient added:Harry Potter With the following requests:Xray: 80. Basic Appointment charge; 50.0
+A new Patient added:Fintan Murphy With the following requests:Xray: 80. Basic Appointment charge; 40.0
