@@ -28,7 +28,7 @@ class PatientsController < ApplicationController
   # GET /patients/1
   # GET /patients/1.json
   def show
-    #add appointments to the patients controller where patient_id is patient id ordered descending 
+    #add appointments to the patients controller where patient_id is patient id ordered descending
     @appointments = Appointment.where(patient_id: @patient.id).order("created_at DESC")
   end
 
@@ -36,7 +36,7 @@ class PatientsController < ApplicationController
   def new
     # Create patient from the current_user logged in i.e the current doctor logged in
     @patient = current_user.patients.build
-   # @patient = Patient.find(params:patient_id)
+    @patient = Patient.find(params:patient_id)
     @appointment = Appointment.new
   end
 

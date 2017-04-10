@@ -81,7 +81,6 @@ Rails.application.configure do
   #    s3_region: ENV.fetch('us-west-2'),
   #  }
 #}
-
   config.paperclip_defaults = {
   storage: :s3,
   s3_credentials: {
