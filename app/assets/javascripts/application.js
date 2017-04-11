@@ -16,6 +16,7 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require customjsfile
+//= require global
 //= require bootstrap/dropdown
 //= require turbolinks
 //= require_tree .

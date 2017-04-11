@@ -42,9 +42,10 @@ gem "paperclip", "~> 5.0.0.beta1"
 # Use amazon web services (cloud platform to store images)
 gem 'aws-sdk', '~> 2.3'
 # Use bootstrap
-gem 'bootstrap', '~> 4.0.0.alpha3'
-
+#gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'bootstrap-sass'
 gem 'delayed_job_active_record'
+gem 'devise_zxcvbn'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
