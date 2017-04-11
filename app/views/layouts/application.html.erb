@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Smarth Health Application</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -13,7 +14,7 @@
     <div class="navbar-header">
       <%= link_to 'Smart Health Application', root_path, class: 'navbar-brand' %>
     </div>
-    <div id="navbar">
+    <div id="wrapper">
       <ul class="nav navbar-nav">
         <li><%= link_to 'Home', root_path %></li>
         <% if user_signed_in? %>
