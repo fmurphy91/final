@@ -13,7 +13,9 @@
 //= require jquery
 //= require jquery.raty
 //= require bootstrap
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require customjsfile
+//= require bootstrap/dropdown
 //= require turbolinks
 //= require_tree .
