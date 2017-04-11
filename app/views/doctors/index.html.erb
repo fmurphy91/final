@@ -1,7 +1,11 @@
-<%= form_tag(doctors_path, :method => "get", class: "form-inline pull-xs-right", role: 'search') do %>
-<%= text_field_tag :search, nil, :placeholder => "Search By lastname", class: 'form-control' %>
-<%= submit_tag 'Search', name: nil, class: "btn btn-success-outline" %>
-<% end %>
+<div class="form-group row">
+  <div class="col-sm-10">
+    <%= form_tag(patients_path, :method => "get", class: "form-inline pull-xs-right", role: 'search') do %>
+    <%= text_field_tag :search, nil, :placeholder => "Search Patients", class: 'form-control' %>
+    <%= submit_tag 'Search', name: nil, class: "btn btn-success" %>
+    <% end %>
+  </div>
+</div>
 <br>
 
 <h1>Registered Doctors</h1>

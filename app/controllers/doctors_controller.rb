@@ -11,9 +11,9 @@ class DoctorsController < ApplicationController
     @doctors = Doctor.order("lastname")
     if params[:search]
       @doctors = Doctor.search(params[:search])
-      @doctors = @doctors.order("created_at ASC")
+      @doctors = @doctors.order("user_id ASC")
     else
-      @doctors = @doctors.order("created_at DESC")
+      @doctors = @doctors.order("user_id DESC")
     end
   end
 
