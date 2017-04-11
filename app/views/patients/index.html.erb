@@ -1,9 +1,4 @@
-<li>
-<%= form_tag(patients_path, :method => "get", class: "form-inline pull-xs-right", role: 'search') do %>
-<%= text_field_tag :search, nil, :placeholder => "Search Patients", class: 'form-control' %>
-<%= submit_tag 'Search', name: nil, class: "btn btn-success" %>
-<% end %>
-</li>
+
 <br>
 
 <h1>Patient Records</h1>
@@ -49,3 +44,8 @@
     <%= link_to 'Add Patient Record', new_patient_path,  class: 'btn btn-primary align' %>
   </div>
 </div>
+
+<%= form_tag(patients_path, :method => "get", class: "form-inline pull-xs-right", role: 'search') do %>
+<%= text_field_tag :search, nil, :placeholder => "Search Patients", class: 'form-control' %>
+<%= submit_tag 'Search', name: nil, class: "btn btn-success" %>
+<% end %>
