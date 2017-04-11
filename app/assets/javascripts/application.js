@@ -11,12 +11,12 @@
 // about supported directives.
 //
 //= require jquery.raty
-//= require bootstrap
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require customjsfile
-//= require global
 //= require bootstrap/dropdown
+//= require zxcvbn
+//= require global
+//= require customjsfile
 //= require jquery
 //= require turbolinks
 //= require_tree .
