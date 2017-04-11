@@ -8,7 +8,6 @@ class PatientsController < ApplicationController
   # allows only admin users access the :ensure_admin to allow them to destroy/delete patients
   before_filter :ensure_admin, :only => [:destroy]
   before_action :set_patient, only: [:show, :edit, :update, :destroy]
-  http_basic_authenticate_with name: "dhh", password: "secret"
   # GET /patients
   # GET /patients.json
   def index
