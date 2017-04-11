@@ -10,13 +10,11 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery.raty
+//= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap/dropdown
 //= require zxcvbn
 //= require global
 //= require customjsfile
-//= require jquery
 //= require turbolinks
-//= require_tree .
