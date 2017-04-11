@@ -14,9 +14,6 @@
 
  @import "bootstrap";
 
-
-
-
 body {
 	//background: #DCDCDC;
 	background: #304352;  /* fallback for old browsers */
@@ -30,11 +27,4 @@ body {
   border-radius: 4px;
   box-shadow: 0 0 6px #ccc;
   background-color: #fff;
-}
-.alert-alert {
-  @extend .alert-warning;
-}
-
-.alert-notice {
-  @extend .alert-info;
 }
