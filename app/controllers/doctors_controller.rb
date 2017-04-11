@@ -8,12 +8,12 @@ class DoctorsController < ApplicationController
   # GET /doctors.json
   def index
     @doctors = Doctor.all
-    @doctors = Doctor.order("lastname")
+    @doctors = Doctor.order("user_id")
     if params[:search]
       @doctors = Doctor.search(params[:search])
-      @doctors = @doctors.order("user_id ASC")
+      @doctors = @doctors.order("created_at ASC")
     else
-      @doctors = @doctors.order("user_id DESC")
+      @doctors = @doctors.order("created_at DESC")
     end
   end
 
