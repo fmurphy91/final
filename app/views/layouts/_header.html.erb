@@ -1,18 +1,18 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-toggleable-md bg-inverse">
   <div class="container">
     <div class="navbar-header">
-      <%= link_to 'Devise Demo', root_path, class: 'navbar-brand' %>
+      <%= link_to 'Smarth Health Application', root_path, class: 'navbar-brand' %>
     </div>
-    <div id="navbar">
-      <ul class="nav navbar-nav">
-        <li><%= link_to 'Home', root_path %></li>
+    <div class="navbar-collapse collaspse" id="navbarNavDropdown">
+      <ul class="nav navbar-nav mr-auto">
         <% if user_signed_in? %>
-          <li><%= link_to 'Secret', secret_path %></li>
+          <li><%= link_to "Doctors", doctors_path, class: "nav-link" %></li>
+          <li><%= link_to "Patients", patients_path, class: "nav-link" %></li>
         <% end %>
       </ul>
-      <ul class="nav navbar-nav pull-right">
+      <ul class="navbar-nav">
         <% if user_signed_in? %>
-          <li class="dropdown">
+          <li class="nav-item dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
               <%= current_user.email %>
               <span class="caret"></span>
@@ -23,13 +23,16 @@
             </ul>
           </li>
         <% else %>
-          <li><%= link_to 'Log In', new_user_session_path %></li>
-          <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-        <% end %>
+        <ul class="nav navbar-nav">
+          <li><%= link_to 'Log In', new_user_session_path, class:'navbar-brand' %></li>
+          <li><%= link_to 'Sign Up', new_user_registration_path, class: 'navbar-brand' %></li>
+          <% end %>
+        </ul>
       </ul>
     </div>
   </div>
 </nav>
+<br>
 <div class="container">
   <% flash.each do |key, value| %>
     <div class="alert alert-<%= key %>">

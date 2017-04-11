@@ -17,27 +17,10 @@
     <%= content_tag(:div, msg, class: "alert alert-info") %>
     <% end %>
     <%= yield %>
-    <div id='first-column'>
-      <div class="loginbox">
-        <% if user_signed_in? %>
-        <h5>Signed in as... <%= current_user.email %>
-          (<%= link_to 'Sign out', destroy_user_session_path,
-          method: :delete%>)
-        </h5>
-        <% else %>
-        <h2> <%= link_to 'Register',
-        new_user_registration_path %>
-      </h2>
-      <h2> <%= link_to 'Sign in',
-      new_user_session_path %>
-    </h2>
-    <% end %>
-  </div>
-</div>
 </div>
 <div id="footer">
-  <div class="container">
-    <p class="text-muted">Created by <a href="http://radiant-wind.com" target="_blank">Radiant Wind</a></p>
+  <div class="container mr-auto">
+    <p class="text-muted">Created by <a href="https://www.linkedin.com/in/fintan-murphy-25269494/" target="_blank">Fintan Murphy</a></p>
   </div>
 </div>
 </body>
